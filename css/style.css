@@ -682,12 +682,10 @@ body {
   color: #564f4f;
   max-width: 240px;
   margin-bottom: 30px;
+  height: 48px;
 }
 
 .form__input__date {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background-size: 12px;
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
