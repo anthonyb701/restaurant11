@@ -691,6 +691,9 @@ body {
   background-repeat: no-repeat;
   background-color: #ffffff;
   height: 48px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .form__input:focus {
