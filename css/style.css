@@ -15,6 +15,8 @@ body {
   border: 1px solid #ffffff;
   font-size: 18px;
   font-family: 'Lato', sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-trans {
@@ -105,6 +107,7 @@ body {
 
 .header__strelka {
   margin-top: 65px;
+  cursor: pointer;
 }
 
 .img-logo {
@@ -708,10 +711,16 @@ body {
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form__button:focus {
-  outline: 1px solid #c9a131;
+  outline: 1px solid #c09a33;
+}
+
+.form__button:hover {
+  background-color: #131c22;
 }
 
 @media (max-width: 992px) {
