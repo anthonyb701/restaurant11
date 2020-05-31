@@ -692,6 +692,7 @@ body {
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
   background-color: #ffffff;
+  height: 48px;
 }
 
 .form__input:focus {
