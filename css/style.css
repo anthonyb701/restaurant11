@@ -38,7 +38,6 @@ body {
 .header {
   background: url("../img/bg-first.png") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
   background-blend-mode: multiply;
   min-height: 750px;
 }
@@ -279,6 +278,13 @@ body {
 .dish__dishimg {
   margin-top: 55px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .dish__dishimg {
+    width: 280px;
+    height: auto;
+  }
 }
 
 .section-green {
