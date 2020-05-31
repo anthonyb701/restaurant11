@@ -675,6 +675,10 @@ body {
   margin-bottom: 30px;
 }
 
+.form__input:focus {
+  outline: 1px solid #c9a131;
+}
+
 .form__input::-webkit-input-placeholder {
   color: #564f4f;
 }
@@ -704,6 +708,10 @@ body {
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 16px;
+}
+
+.form__button:focus {
+  outline: 1px solid #c9a131;
 }
 
 @media (max-width: 992px) {
