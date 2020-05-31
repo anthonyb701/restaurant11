@@ -810,4 +810,10 @@ body {
   font-weight: 700;
   color: #ffffff;
 }
+
+@media (max-width: 992px) {
+  .footer__about {
+    margin-bottom: 30px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
