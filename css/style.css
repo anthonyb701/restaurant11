@@ -702,17 +702,21 @@ body {
 
 .form__input::-webkit-input-placeholder {
   color: #564f4f;
+  color: #564f4f;
 }
 
 .form__input:-ms-input-placeholder {
+  color: #564f4f;
   color: #564f4f;
 }
 
 .form__input::-ms-input-placeholder {
   color: #564f4f;
+  color: #564f4f;
 }
 
 .form__input::placeholder {
+  color: #564f4f;
   color: #564f4f;
 }
 
