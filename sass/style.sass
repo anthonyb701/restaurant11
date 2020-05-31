@@ -1,0 +1,499 @@
+*,
+   box-sizing: border-box
+body
+   padding: 0
+   margin: 0
+.button 
+   text-transform: uppercase
+   padding: 21px 52px
+   color: #ffffff
+   border: 1px solid #ffffff
+   font-size: 18px
+   font-family: 'Lato', sans-serif
+   &-trans
+      background: transparent
+   &-trans:hover
+      background: rgba(0,0,0, 0.6)
+   &-trans:first-child
+      margin-right: 30px
+.bg-dark
+   background-color: transparent!important
+// header // 
+.header 
+   background: url("../img/bg.jpg") no-repeat center
+   background-size: cover
+   background-attachment: fixed
+   background-blend-mode: multiply
+   min-height: 750px
+   &-wrapper
+      background: url("../img/bg-dark.png") no-repeat center
+      background-size: cover
+   &__social
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      &__links
+         text-decoration: none
+         color: #dab33e
+         font-size: 21px
+         margin-right: 10px
+      &__links:last-child
+         margin-right: 0
+      &__links:hover
+         color: #ffffff
+   &__imporve
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__title
+      margin-top: 100px
+      font-size: 90px
+      color: #ffffff
+      font-family: 'Yeseva One', cursive
+      max-width: 960px
+      text-align: center
+   &__image
+      margin-bottom: 34px
+   &__strelka
+      margin-top: 65px
+
+.img-logo
+   display: block
+.container-nav 
+// Navbar
+.navbar
+   display: flex
+   justify-content: space-around
+   align-items: center
+   max-width: 1400px
+   &__linked
+      flex-grow: 0
+   &-nav
+      align-items: center
+.nav
+   margin-top: 8px
+   &-item
+      padding-right: 25px
+   &-item:last-child
+      padding-right: 5px
+   &-link
+      text-decoration: none
+      color: #ffffff!important
+      font-size: 21px
+      font-weight: 700
+      font-family: 'Gentium Book Basic', serif
+   &-link:hover
+      color: #dab33e
+
+.nav-item.active
+   color: #dab33e!important
+
+
+
+@media (min-width: 992px)
+   .container-nav
+      max-width: 1600px
+@media (min-width: 319px) and (max-width: 991px)
+   .nav-item
+      padding-right: 0!important
+   .header__social_icons
+      padding-right: 18px
+   .sss
+      padding-right: 0!important
+   .header
+      &__title
+         font-size: 60px!important
+   .button:first-child
+      margin-right: 20px!important
+@media (min-width: 319px) and (max-width: 540px)
+   .header
+      &__buttons
+         display: flex
+         flex-direction: column
+         justify-content: center
+         align-items: center
+      &__title
+         font-size: 40px!important
+         margin-top: 50px
+   .button
+      width: 250px!important
+      margin-bottom: 20px
+   .button:first-child
+      margin-right: 0px!important
+
+
+// Dish section
+
+.section-dish
+   background: url("../img/pattern.png") no-repeat center
+   background-size: cover
+.dish
+   &__col
+      margin-top: 106px
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__title
+      font-family: 'Yeseva One', cursive
+      color: #cc9900
+      font-size: 36px
+      margin-bottom: 15px
+      display: block
+      text-align: center
+   &__text
+      font-family: 'Lato', sans-serif
+      font-size: 16px
+      color: #4c4c4c
+      text-align: center
+      max-width: 410px
+      display: block
+   &__image
+      display: block
+      margin-bottom: 30px
+      &__chief
+         display: block
+         margin-top: 40px
+         margin-right: -75px
+   &__img-col
+      display: flex
+      justify-content: center
+   &__dishimg
+      margin-top: 55px
+      margin-bottom: 100px
+
+// Green section
+
+.section-green
+   background: url("../img/bg-ingra.png") no-repeat center
+   background-size: cover
+.green
+   &__col  
+      padding: 50px 0
+   &__wrapper
+      margin-top: 100px
+      padding: 100px 0
+      outline: 1px solid #6b6b66
+      background: rgba(0, 0, 0, 0.67)
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 570px
+      border-radius: 5px
+   &__title
+      font-family: 'Yeseva One', cursive
+      color: #ffffff
+      font-size: 36px
+      margin-bottom: 15px
+      display: block
+      text-align: center
+   &__text
+      font-family: 'Lato', sans-serif
+      font-size: 16px
+      color: rgba(255,255,255, 0.9)
+      text-align: center
+      max-width: 410px
+      display: block
+      margin-bottom: 70px
+      margin-top: 30px
+      font-weight: 400;
+   line-height: 24px;
+   &__photos
+      display: flex
+      justify-content: space-between
+      &__item
+         margin-right: 15px
+      &__item:last-child
+         margin-right: 0px
+@media (min-width: 992px) and ( max-width: 1200px )
+   .green
+      &__col
+         display: flex
+         justify-content: center
+         margin: 0 auto
+      &__wrapper 
+         padding: 150px 120px
+@media (min-width: 590px) and ( max-width: 1200px )
+   .green
+      &__col
+         display: flex
+         justify-content: center
+         margin: 0 auto
+      &__wrapper 
+         padding: 100px 80px
+@media( max-width: 590px )
+   .green
+      &__col
+         padding: 0px
+      &__photos
+         &__item
+            margin-right: 7px!important
+@media( max-width: 340px )
+   .green
+      &__photos
+         &__item
+            margin-right: -5px!important
+   
+// Menu
+
+.section-menu
+   background: url("../img/pattern2.png") no-repeat center
+   background-blend-mode: multiply
+   background-color: #c1d8d64a
+   background-size: cover
+   padding-top: 100px 
+.menu
+   &__col
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 70px
+      &__last
+         margin-top: -83px
+   &__title
+      color: #cc9900
+      font-family: "Yeseva One"
+      font-size: 36px
+      display: block
+      margin-bottom: 15px
+   &__image
+      display: block
+      padding-bottom: 30px
+   &__nameprice
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #c89f2d
+      color: #c89f2d
+      margin-bottom: 10px
+      position: relative
+   &__name
+      font-family: "Yeseva One"
+      font-size: 21px
+   &__price
+      font-family: "Yeseva One"
+      font-size: 21px
+   &__description
+      font-family: 'Lato'
+      font-size: 16px
+      color:#4c4c4c
+   &__tag
+      max-width: 370.47px
+   &__special
+      border: 1px solid #c89f2d
+      padding: 8px
+      padding-bottom: 0
+      margin-bottom: 10px
+      &__tag
+         position: absolute
+         top: -37px
+         right: -9px
+         background: #c89f2d
+         padding: 2px 7px
+         opacity: 0.8
+         color: #ffffff
+
+@media (min-width: 319px) and (max-width: 326px)
+   body
+      overflow-x: hidden
+@media ( max-width: 992px )
+   .menu
+      &__col
+         &__last
+            margin-top: 0
+
+// Reviews
+.section-reviews
+   background: url("../img/bg-reviews.png") no-repeat center
+   background-size: cover
+.review
+   &__col
+      padding: 100px 0
+   &__wrapper
+      background: url("../img/bg-smallrev.png") no-repeat center
+      background-size: cover
+      display: flex
+      flex-direction: column
+      align-items: center
+      border-radius: 8px
+      outline: 1px solid #6b6b66
+   &__title
+      font-family: "Yeseva One"
+      font-size: 36px
+      color: #ffffff
+      margin-top: 82px
+      margin-bottom: 15px
+   &__slider
+      margin-top: 15px
+   &__text
+      max-width: 660px
+      color: #dde0df
+      font-size: 25px
+      font-weight: 700
+      font-family: "Gentium Book Basic"
+      line-height: 45px
+      margin-bottom: 45px
+      text-align: center
+   &__descr 
+      font-family: 'Lato'
+      font-size: 18px
+      color: #ffffff
+      text-align: center
+      display: block
+      margin-bottom: 103px
+.cov
+   font-family: "Yeseva One"
+   color: #bdc0bfbb
+   line-height: 45px
+   font-size: 96px
+   
+@media (max-width: 768px)
+   .review
+      &__col
+         padding: 0
+      &__text
+         padding: 0 15px
+// Form
+@media (min-width: 992px)
+   .container-form
+      max-width: 1400px
+      display: flex
+   
+.section-form
+   background: url("../img/pattern2.png") no-repeat center
+   background-blend-mode: multiply
+   background-color: #c1d8d64a
+   background-size: cover
+   padding: 100px 0
+.form
+   &__photos
+      display: flex
+      justify-content: space-around
+   &__col
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__title
+      font-family: "Yeseva One"
+      font-size: 36px
+      color: #cc9900
+      line-height: 24px
+      margin-top: 3px
+      margin-bottom: 25px
+      line-height: 40px
+      display: block
+      text-align: center
+   &__text
+      font-family: 'Lato'
+      font-size: 16px
+      color: #4c4c4c
+      line-height: 24px
+      max-width: 417px
+      text-align: center
+      display: block
+   &__image_div
+      display: block
+      margin-bottom: 25px
+   &__form
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      
+      &__var
+         flex-basis: 49%
+         display: flex
+         flex-direction: column
+         margin-left: auto
+   &__label
+      font-family: "Open Sans"
+      color: #c9a131
+      font-size: 14px
+      font-weight: 700
+      margin-right: -8px
+      display: block
+   &__input
+      background-color: #ffffff
+      border: 1px solid #c8c6c6
+      padding: 10px 0px 10px 14px
+      color: #564f4f
+      max-width: 240px
+      margin-bottom: 30px
+   &__input::placeholder
+      color: #564f4f
+   &__select
+      height: 48px
+      padding: 7px 0px 10px 14px
+   &__button
+      margin: 0 auto
+      background-color: #c89f2d
+      border: 1px solid #c89f2d
+      padding: 12px 60px
+      color: #ffffff
+      font-family: "Open Sans"
+      font-size: 16px
+
+@media ( max-width:  992px)
+   .form
+      &__title
+         margin-top: 70px
+@media (min-width: 1400px)
+   .form
+      &__form
+         padding-left: 100px
+@media (min-width: 768px) and (max-width: 991px)
+   .form
+      &__form
+         padding-left: 100px
+@media (max-width: 490px)
+   .form
+      &__form
+         &__var
+            flex-basis: 100%
+      &__label
+         text-align: left
+      &__input
+         width: 280px
+
+// Footer
+
+.footer
+   background-color: #191919
+   color: #ffffff
+   &__class
+      padding: 72px 0
+      flex-wrap: wrap
+   &__about
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      &__title
+         display: block
+         font-family: "Yeseva One"
+         font-size: 21px
+         color: #fefefe
+         margin-bottom: 15px
+      &__image
+         display: block
+         margin-bottom: 15px
+      &__image2
+         display: block
+         margin-top: 57px
+      &__text 
+         text-align: center
+         font-family: "Open Sans"
+         font-size: 16px
+         line-height: 24px
+         color: #ffffffc0
+         max-width: 350px
+   &__icons
+      margin-top: 52px
+   &__link
+      text-decoration: none
+      color: #ffffff
+      margin-right: 5px
+   &__link:last-child
+      margin-right: 0
+.gcov
+   font-family: "Open Sans"
+   font-weight: 700
+   color: #ffffff
