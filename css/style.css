@@ -34,7 +34,7 @@ body {
 }
 
 .header {
-  background: url("../img/bg.jpg") no-repeat center;
+  background: url("../img/bg-first.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
